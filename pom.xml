@@ -12,8 +12,10 @@
 		<hibernate.version>4.3.0.Final</hibernate.version>
 		<osjdk.version>3.2.1</osjdk.version>
 		<lombok.version>1.16.6</lombok.version>
-	</properties>
-	
+                <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+                <maven.compiler.source>1.8</maven.compiler.source>
+                <maven.compiler.target>1.8</maven.compiler.target>
+        </properties>
 	<dependencies>
 		<!-- mybatis -->
 		<dependency>
@@ -89,11 +91,6 @@
             <version>1.2.16</version>
         </dependency>
 	</dependencies>
-	<properties>
-             <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-             <maven.compiler.source>1.8</maven.compiler.source>
-             <maven.compiler.target>1.8</maven.compiler.target>
-        </properties>
 	<build>
 		<finalName>order</finalName>
 		<plugins>
