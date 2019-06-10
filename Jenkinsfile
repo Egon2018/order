@@ -8,7 +8,7 @@ pipeline {
     }
     stage('bulid') {
       steps {
-        sh '''cd /var/lib/jenkins/order-mastar
+        sh '''cd /var/lib/jenkins/workspace/order_master
 mvn clean install'''
       }
     }
