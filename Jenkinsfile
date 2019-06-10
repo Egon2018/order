@@ -3,7 +3,10 @@ pipeline {
   stages {
     stage('sleep') {
       steps {
-        sleep 30
+        sleep 3
+        sh '''echo $PATH
+echo $JAVA_HOME
+echo $M2_HOME'''
       }
     }
     stage('bulid') {
