@@ -17,7 +17,7 @@ mvn clean install'''
     }
     stage('start tomcat') {
       steps {
-        sh '''export BUILD_ID=DONT KILL ME  
+        sh '''export BUILD_ID=dontkillme  
 export DEPLOYMENT_HOME=/var/lib/jenkins/workspace/order_master  
 export USERPORTAL_HOME=/home/tomcat-8010
 
