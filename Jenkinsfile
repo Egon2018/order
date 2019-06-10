@@ -1,11 +1,6 @@
 pipeline {
   agent any
   stages {
-    stage('checkout') {
-      steps {
-        git(url: 'https://github.com/Egon2018/order.git', branch: 'master', changelog: true)
-      }
-    }
     stage('sleep') {
       steps {
         sleep 30
